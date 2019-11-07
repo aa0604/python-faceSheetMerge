@@ -12,6 +12,14 @@ python面单配货单生成合并（多线程）
 5、遍历数据，根据数据生成配货单的pdf，然后合并面单pdf
 6、socket通知服务端完成打印，返回文件名
 
+### 打印服务：(到项目根目录的python里运行)
+```
+nohup python -u socketPdfServer.py >  /var/www/html/socketPdfServer.log 2>&1 &
+```
+### 停止打印服务：
+```
+python stopService.py
+```
 
 ### 安装插件
 ```
